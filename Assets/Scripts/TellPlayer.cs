@@ -35,7 +35,7 @@ public class TellPlayer : MonoBehaviour
     {
         Intake += cals;
         Karma += karm;
-        Stats.text = "Your caloric intake is " + Intake + " and your karma is " + Karma;
+        Stats.SetText("Your caloric intake is " + Intake + " and your karma is " + Karma);
         if ((Intake < -30) || (Karma < -20))
         {
             Stats.text = "You Died!";
@@ -44,11 +44,11 @@ public class TellPlayer : MonoBehaviour
     public virtual void UseItem()
 
     {
-        Debug.Log(Calories);
+        //Debug.Log(Calories);
         Debug.Log(Intake);
         //two lines below find a script called TellPlayer and call functions in it
         FindObjectOfType<TellPlayer>().WriteMessage(Message);
-        FindObjectOfType<TellPlayer>().UpdateStats(Calories, Karmas);
+        FindObjectOfType<TellPlayer>().UpdateStats(Intake, Karma);
 
     }
 }
