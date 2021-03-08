@@ -629,6 +629,11 @@ MonoBehaviour:
   Intake: 2
   Karma: 10
   playerMessage: {fileID: 0}
+  Name: 
+  Calories: 0
+  Karmas: 0
+  Alive: 0
+  Message: 
 --- !u!1 &950550639
 GameObject:
   m_ObjectHideFlags: 0
@@ -1114,6 +1119,11 @@ MonoBehaviour:
   Intake: -20
   Karma: -20
   playerMessage: {fileID: 0}
+  Name: 
+  Calories: 0
+  Karmas: 0
+  Alive: 0
+  Message: 
 --- !u!1 &1086378666
 GameObject:
   m_ObjectHideFlags: 0
@@ -1238,6 +1248,11 @@ MonoBehaviour:
   Intake: 5
   Karma: 10
   playerMessage: {fileID: 0}
+  Name: 
+  Calories: 0
+  Karmas: 0
+  Alive: 0
+  Message: 
 --- !u!1 &1426232971
 GameObject:
   m_ObjectHideFlags: 0
@@ -1461,6 +1476,41 @@ MonoBehaviour:
   Intake: 50
   Karma: 0
   playerMessage: {fileID: 0}
+  Name: 
+  Calories: 0
+  Karmas: 0
+  Alive: 0
+  Message: 
+--- !u!1 &1693573850
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1693573851}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1693573851
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693573850}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 86.59828, y: -41.64438, z: 90}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1958881072
 GameObject:
   m_ObjectHideFlags: 0
@@ -1585,3 +1635,8 @@ MonoBehaviour:
   Intake: 200
   Karma: 0
   playerMessage: {fileID: 0}
+  Name: 
+  Calories: 0
+  Karmas: 0
+  Alive: 0
+  Message: 
