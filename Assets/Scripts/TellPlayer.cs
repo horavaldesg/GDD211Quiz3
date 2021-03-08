@@ -7,7 +7,7 @@ public class TellPlayer : MonoBehaviour
 
     [SerializeField] private int Intake;
     [SerializeField] private int Karma;
-    private TextMeshProUGUI Stats;
+    [SerializeField] private TextMeshProUGUI Stats;
     public TextMeshProUGUI playerMessage;
 
     public string Name;
@@ -30,23 +30,25 @@ public class TellPlayer : MonoBehaviour
     {
         playerMessage.text = words;
     }
+
     public void UpdateStats(int cals, int karm)
     {
         Intake += cals;
         Karma += karm;
-        Stats.SetText("Your caloric intake is " + Intake + " and your karma is " + Karma);
+        Stats.text = "Your caloric intake is " + Intake + " and your karma is " + Karma;
         if ((Intake < -30) || (Karma < -20))
         {
             Stats.text = "You Died!";
         }
-
     }
     public virtual void UseItem()
-		
-	{
-		//two lines below find a script called TellPlayer and call functions in it
-		FindObjectOfType<TellPlayer>().WriteMessage(Message);
-		FindObjectOfType<TellPlayer>().UpdateStats(Calories, Karma);
 
-	}
+    {
+        Debug.Log(Calories);
+        Debug.Log(Intake);
+        //two lines below find a script called TellPlayer and call functions in it
+        FindObjectOfType<TellPlayer>().WriteMessage(Message);
+        FindObjectOfType<TellPlayer>().UpdateStats(Calories, Karmas);
+
+    }
 }

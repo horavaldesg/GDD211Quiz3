@@ -15,14 +15,16 @@ public class Apple : TellPlayer
     {
         
     }
-    public override void UseItem()
-    {
-        base.UseItem();
-        Debug.Log("Put things here");
-
-    }
+    
     private void OnMouseDown()
     {
         UseItem();
+    }
+
+
+    public override void UseItem()
+    {
+        base.UseItem();
+       
     }
 }
